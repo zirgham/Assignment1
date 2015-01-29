@@ -15,32 +15,75 @@
             <div class="slide-text">
                 <p>Start here and find the treasure...  </p><br />
                 <p>choose a path at each step to win the game !</p><br />
-                <p>CHOICE 1:  look for river and walk alongside river in the direction opposite to the flow of water</p>
-                <p><a href="#2"> choose 1</a></p><br />
-                <p>for your dad, who is a scientist, to come home.<br /></p>
-                <p><a href="#3">choose 2</a></p>
+                <p>CHOICE 1:  look for river and walk alongside river in the direction opposite to the flow of water</p>  <!--2.1 level-->
+                <p><a href="#3-left"> choose 1</a></p><br />
+                <p> look for river and walk alongside river in the direction of flow of water<br /></p>   <!--2.2 level-->
+                <p><a href="#3-right">choose 2</a></p>
             </div>
         </div>
         <!--SLIDE 2-->
-        <div id="2" class="step slide" data-x="1500">
+        <div id="3-left" class="step slide" data-x="1500" data-y="1500" data-z="1500">
             <div class="slide-text">
-                <p>You went back in time. It was fun. </p>
-                <div class="menu"><p><a href="#1">START OVER</a></p></div>
+                <p>CHOICE 1: Pick up the sword near the treehouse and eat mango from the tree and dig for the box  </p><br />
+                <p><a href="#youLose1">CHOOSE 1</a></p><br /><br />  <!--3.1 level-->
+                <p>CHOICE 2: Find a boat and ride on it to reach the waterfall. Dig near banana tree. There are two boxes-  </p>
+                <p><a href="#youLose2">CHOOSE 2</a></p>   <!--3.2  level--><br />
+            
 
             </div>
         </div>
 
         <!--SLIDE 3-->
-        <div id="3" class="step slide" data-x="-1500">
+        <div id="3-right" class="step slide" data-x="-1500" data-y="-1500" data-z="-1500">
             <div class="slide-text">
-                <p>You waited for your dad and he didnèt want to go back through time. </p>
-                <p>Man, you are bored !</p>
+                <p>CHOICE 1: look for a digger and dig under the tree in front of a boat </p>
+                <p><a href="#5">CHOOSE 1</a></p><br /><br />  <!--3.1 level-->
+                <p>CHOICE 2: pick up a key from the boat and dig under the tree standing in front of two large rocks placed adjacent to each other </p>
+                <p><a href="#5">CHOOSE 2</a></p><br /><br />  <!--3.1 level-->
+
+
+
+            </div>
+        </div>
+
+        <!--LOSE 1 AND 2-->
+        <div id="youLose1" class="step slide" data-x="3000" data-y="1500" data-z="1500">
+            <div class="slide-text">
+                <p>CHOICE 1: You found the box ?</p><p>Huraayyyyyy !!! Go ahead and open it !!</p>
+                <p><a href="noKey">CHOOSE 1</a></p><br /><br />  <!--3.1 level-->
+                <p>CHOICE 2: couldn't find the box?? </p>
+                <p><a href="#noBox">CHOOSE 2</a></p><br /><br />  <!--3.1 level-->
+
+
+
+            </div>
+        </div>
+
+        <!--noKey and noBox-->
+        <div id="noKey" class="step slide" data-x="4500" data-y="1500" data-z="1500">
+            <div class="slide-text">
+                <p>
+                    You don't have the key to open the box<br>
+
+                    START AGAIN and come back with the key !!
+                </p><br />
                 <div class="menu"><p><a href="#1">START OVER</a></p></div>
 
             </div>
         </div>
-    </div>
 
+        <div id="noBox" class="step slide" data-x="6000" data-y="1500" data-z="160">
+            <div class="slide-text">
+                <p>You couldn't find the box !!</p><br />
+                <p>Why are you here then?? Treasure in the box !</p>
+                <p>Start over again and find the treasure :-)</p>
+
+                <div class="menu"><p><a href="#1">START OVER</a></p></div>
+
+            </div>
+        </div>
+
+    </div>
 
     <!--Javascript section-->
 
