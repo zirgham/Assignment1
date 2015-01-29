@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html><!--developed by:-MOHD ZIRGHAM #300801676-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Impress Demo</title>
+    <!-- CSS section-->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/game.css" rel="stylesheet" />
+</head>
+<body onload="main()">
+    <div id="impress">
+        <!--SLIDE 1-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+                <p>Start here and find the treasure...  </p><br />
+                <p>choose a path at each step to win the game !</p><br />
+                <p>CHOICE 1:  look for river and walk alongside river in the direction opposite to the flow of water</p>
+                <p><a href="#2"> choose 1</a></p><br />
+                <p>for your dad, who is a scientist, to come home.<br /></p>
+                <p><a href="#3">choose 2</a></p>
+            </div>
+        </div>
+        <!--SLIDE 2-->
+        <div id="2" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You went back in time. It was fun. </p>
+                <div class="menu"><p><a href="#1">START OVER</a></p></div>
+
+            </div>
+        </div>
+
+        <!--SLIDE 3-->
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>You waited for your dad and he didnèt want to go back through time. </p>
+                <p>Man, you are bored !</p>
+                <div class="menu"><p><a href="#1">START OVER</a></p></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Javascript section-->
+
+    <script src="scripts/lib/impress.js"></script>
+    <script>impress().init();</script>
+    <script src="scripts/lib/game.js"></script>
+</body>
+</html>

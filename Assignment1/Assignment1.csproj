@@ -65,6 +65,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\game.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="index.html" />
+    <Content Include="scripts\lib\game.js" />
+    <Content Include="scripts\lib\impress.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
